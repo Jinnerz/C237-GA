@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Your Products</title>
+</head>
+<body style="background-color: black; color: white;">
+    <!-- user id passed into navbar for proper navigation -->
+    <%- include ('partials/navbar.ejs', {userId: userId}) %>
+    <div class="container">
+        <br>
+        <div class="text-center"><h2>Product Details</h2></div>
+        <br>
+        <div style="display: flex; justify-content: center; border: 1px white solid;">
+            <% if (product) { %> <!-- Check if product data exists -->
+                <div>
+                    <p><b>Product Name:</b> <%= product.productName %></p>
+                    <p><b>Product Description:</b> <%= product.productDescription %></p>
+                    <p><b>Creation Date:</b> <%= product.creationDate.toLocaleDateString('en-US', {year:'numeric', month:'short',day:'2-digit'}) %></p>
+                    <p><b>Product Image:</b> <img src = "/images/<%= product.image %>" width="20%"></p> 
+                    <p><b>Price:</b> $<%= product.price %></p>
+                    <a href ="/user/<%= product.userId%>/products">Back</a>
+                </div>
+            <% } else { %>
+                <p>No product found.</p>
+            <% } %>
+            
+        </div>
+    </div>
+</body>
+</html>

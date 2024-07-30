@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-sm bg-success navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Minecraft Store</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="homelink" href="/">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" id="accountlink" href="/account/1">My Account</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" id="productlink" href="/products">My Products</a>
+                </li>   -->
+            </ul>
+
+            
+        </div>
+        <form class="d-flex">
+            <!-- Referencing issues, chatgpt solution, buttons uses onclick as well as window.location.href which  references the browser location-->
+            <button type="button" class="btn btn-primary" onclick="window.location.href='/loginpage'">Log In</button>
+        </form>
+        
+    </div>
+</nav>

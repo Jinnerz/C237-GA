@@ -1,0 +1,63 @@
+.card {
+    color: black;
+    background-color: lightgray;
+}
+
+.card-title {
+    text-align: center;
+    font-weight:bold;
+}
+
+.card-img-top {
+    height: 270px;
+}
+
+#background {
+    background-color: black;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    background-color: gray;
+}
+
+#logobox {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card-img-top {
+    padding: 10px;
+}
+
+.star-rating {
+    display: inline-flex;
+    font-size: 2em;
+    color: #ddd;
+}
+
+.star-rating .star-filled {
+    color: #f5b301;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    color:white;
+}
+
+.containeritem {
+    display: flex;
+    justify-content: center;
+}
